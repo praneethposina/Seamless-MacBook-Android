@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Seamless: Send to Phone",
+  "version": "1.0.0",
+  "description": "Send the current tab, links, text, or a YouTube video at the exact second to your Android phone.",
+  "permissions": ["activeTab", "contextMenus", "scripting", "storage", "notifications"],
+  "host_permissions": ["http://127.0.0.1/*"],
+  "background": { "service_worker": "background.js", "type": "module" },
+  "action": { "default_title": "Send this tab to your phone" },
+  "options_page": "options.html",
+  "commands": {
+    "send-tab": {
+      "suggested_key": { "default": "Ctrl+Shift+Y", "mac": "Command+Shift+Y" },
+      "description": "Send this tab to your phone"
+    },
+    "send-clipboard": {
+      "suggested_key": { "default": "Ctrl+Shift+U", "mac": "Command+Shift+U" },
+      "description": "Push the Mac clipboard to your phone now"
+    }
+  },
+  "icons": { "128": "icon128.png" }
+}

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Seamless</string>
+    <string name="send_to_mac">Send to Mac</string>
+    <string name="tile_label">Clipboard → Mac</string>
+</resources>
